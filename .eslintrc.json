@@ -1,0 +1,43 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/recommended",
+        "plugin:import/errors",
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["import", "@typescript-eslint"],
+    "rules": {
+        "indent": ["error", 4],
+        "linebreak-style": 1,
+        "import/named": 1,
+        "quotes": ["error", "double"],
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "@typescript-eslint/no-explicit-any": 0
+    },
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
+}
