@@ -29,19 +29,19 @@ npm install
 npm start
 ```
 
-### Run the tests
+### Run tests
 
 ```bash
 npm test
 ```
 
-### Formats the files
+### Formats files
 
 ```bash
 npm run format
 ```
 
-### Run the ES Lint checker
+### Run the linter
 
 ```bash
 npm run lint
